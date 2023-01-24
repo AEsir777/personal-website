@@ -1,0 +1,51 @@
+body {
+    background: #F9F9F9 top/cover url("../images/background-image-dark.jpg") no-repeat;
+    font-family: 'Jost', sans-serif !important;
+    color: #CDF0EA !important;
+}
+
+hr {
+    margin: 1.25rem auto 1.25rem !important;
+    border: none !important;
+    border-top-style: dotted !important;
+    background-color: transparent !important;
+    border-top-color: #FAF4B7 !important;
+    border-top-width: 4px !important;
+    opacity: 1 !important;
+    width: 40%;
+}
+
+.name {
+    font-size: 4rem !important;
+    font-family: 'Satisfy', cursive;
+}
+
+.navigation-bar{
+    position: fixed !important;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* introduction */
+.bio{
+    display: flex;
+    margin: 13% 13%;
+}
+
+.brief-intro{
+    padding: 10% 3%;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.my-image{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#myself{
+    background-color: #F9F9F9;
+    border-radius: 50%;
+    margin-top: auto;
+}
