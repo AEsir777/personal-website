@@ -49,3 +49,16 @@ hr {
     border-radius: 50%;
     margin-top: auto;
 }
+
+/* Projects */
+#projects{
+    padding: 0%;
+}
+
+.carousel-container {
+    padding: 0% !important;
+}
+
+.carousel-caption{
+    color: black !important;
+}

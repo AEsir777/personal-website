@@ -62,23 +62,46 @@
 
         <hr>
         <div class="container-fluid" id="projects">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-                <div class="carousel-inner">
+            <div id="project-carousel" class="carousel slide carousel-dark" data-bs-ride="carousel" data-bs-interval="5000">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>  
+              <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="container-fluid d-block sth"><h3 alt="First slide"> Project 1 </h3></div>
+                          <a href="https://github.com/AEsir777/time_expense_management" target="_blank">
+                            <img src="./images/income-project.png" class="carousel-img d-block w-100">
+                          </a>
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>TO DO Web Application</h5>
+                            <p>TO DO web application using React as Frontend, Django as API and MangoDB as Database.</p>
+                          </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="container-fluid d-block sth"><h3 alt="Second slide"> Project 2 </h3></div>
+                      <a href="https://github.com/AEsir777/some-data-analysis-project" target="_blank">
+                        <img src="./images/ML-project-img.jpg" class="carousel-img d-block w-100">
+                      </a>
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Machine Learning</h5>
+                        <p>Some Machine Learning Projects using Tensorflow on forecasting and image recognition.</p>
+                      </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="container-fluid d-block sth"><h3 alt="Second slide"> Project 3 </h3></div>
+                      <a href="https://github.com/AEsir777/cc3k" target="_blank">
+                        <img src="./images/cc3k-project-img.png" class="carousel-img d-block w-100">
+                      </a>
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>CC3K</h5>
+                        <p>A CC3K game built with C++.</p>
+                      </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" data-bs-target="#carouselExampleControls" type="button" data-bs-slide="prev">
+                <a class="carousel-control-prev" data-bs-target="#project-carousel" type="button" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon text-bg-dark" aria-hidden="true"></span>
                     <span class="sr-only visually-hidden">Previous</span>
                   </a>
-                  <a class="carousel-control-next" data-bs-target="#carouselExampleControls" type="button" data-bs-slide="next">
+                  <a class="carousel-control-next" data-bs-target="#project-carousel" type="button" data-bs-slide="next">
                     <span class="carousel-control-next-icon text-bg-dark" aria-hidden="true"></span>
                     <span class="sr-only visually-hidden">Next</span>
                   </a>
