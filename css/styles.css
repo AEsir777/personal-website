@@ -50,6 +50,32 @@ hr {
     margin-top: auto;
 }
 
+/*Education*/
+.big-education{
+    background: rgba(32, 97, 91, 0.6);
+}
+
+
+.education-section {
+    padding: 3% !important;
+    height: 50%;
+}
+
+
+.education-img{
+    object-fit: cover;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 25%;
+}
+
+
+p {
+    display: flex;
+    justify-content:space-between;
+    margin: 0.1rem !important;
+}
+
 /* Projects */
 #projects{
     padding: 0%;
