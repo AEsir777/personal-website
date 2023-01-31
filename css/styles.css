@@ -52,7 +52,7 @@ hr {
 
 /*Education*/
 .big-education{
-    background: rgba(32, 97, 91, 0.6);
+    background: rgba(18, 19, 19, 0.6);
 }
 
 
@@ -87,4 +87,10 @@ p {
 
 .carousel-caption{
     color: black !important;
+}
+
+/* Footer */
+.contact {
+    width: 1rem;
+    height: 1rem;
 }
