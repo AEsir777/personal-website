@@ -1,18 +1,17 @@
 body {
     background: #F9F9F9 top/cover url("../images/background-image-dark.jpg") no-repeat;
     font-family: 'Jost', sans-serif !important;
-    color: #CDF0EA !important;
+    color: #dcf5f1 !important;
 }
 
 hr {
     margin: 1.25rem auto 1.25rem !important;
     border: none !important;
     border-top-style: dotted !important;
-    background-color: transparent !important;
-    border-top-color: #FAF4B7 !important;
-    border-top-width: 4px !important;
+    border-top-color: white !important;
+    border-top-width: 0.4rem !important;
     opacity: 1 !important;
-    width: 40%;
+    width: 10%;
 }
 
 .name {
@@ -46,9 +45,18 @@ hr {
 
 .brief-intro{
     display: block;
-    padding: 3%;
+    padding: 1% 3% 5%;
     text-align: center;
     font-size: 1.1rem;
+}
+
+.resume-link{
+    font-size: 1.5rem !important;
+    background-color: rgba(18, 19, 19, 0.3) !important;
+}
+
+.resume-link:hover{
+    background-color: rgba(256, 256, 256, 0.6) !important;
 }
 
 
