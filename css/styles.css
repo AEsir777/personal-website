@@ -61,7 +61,7 @@ hr {
 
 
 /*Education*/
-.big-education{
+/* .big-education{
     background: rgba(18, 19, 19, 0.6);
 }
 
@@ -84,7 +84,7 @@ p {
     display: flex;
     justify-content:space-between;
     margin: 0.1rem !important;
-}
+} */
 
 /* Projects */
 #projects{
