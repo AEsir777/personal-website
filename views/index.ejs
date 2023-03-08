@@ -1,0 +1,152 @@
+<%- include('header'); -%>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-dark bg-dark navbar-expand-md navigation-bar">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#">Kebing's World</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#introduction-section">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- profile section -->
+  <div class="container-fluid" id="introduction-section">
+    <div class="profile-container">
+      <img id="my-image" class="img-fluid" alt="Kebing Liu Profile" src="./images/myself.png">
+      <div class="brief-intro">
+        <h1 class="name">Hello, I'm Kebing Liu</h1>
+        <p> I am a 3A BMath Data Science Student at University of Waterloo from Chongqing, China. <br>
+          I love learning new stuffs and applying what I have learn to build projects! </p>
+      </div>
+      <a href="pdfs/Resume.pdf" class="btn btn-outline-light resume-link" target="_blank"> Checkout My Resume </a>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- skills section -->
+  <div class="container-fluid" id="skills-section">
+    <div class="frontend-skills container">
+      <h2> Frontend Skills </h2>
+      <% frontendSkills.forEach(function(skill) {%>
+        <p><%= skill %></p>
+      <% }); %>
+    </div>
+    <div class="backend-skills container">
+      <h2> Backtend Skills </h2>
+      <% backendSkills.forEach(function(skill) {%>
+        <p><%= skill %></p>
+      <% }); %>
+    </div>
+    <div class="machine-learning-skills container">
+      <h2> Machine Learning Skills </h2>
+      <% MLSkills.forEach(function(skill) {%>
+        <p><%= skill %></p>
+      <% }); %>
+    </div>
+    <div class="other-skills container">
+      <h2> Other Skills </h2>
+      <% otherSkills.forEach(function(skill) {%>
+        <p><%= skill %></p>
+      <% }); %>
+    </div>
+    <!--            <div class="container">
+               <div class="row big-education text-light">
+                <div class="col-lg-3 col-md-6 col-sm-12 container education-section">
+                  <img src="./images/uwaterloo.png" class="education-img">
+                  <h5> Education </h5>
+                  <p> 3A Data Science </p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 container education-section">
+                  <img src="./images/hobbies.jpg" class="education-img">
+                  <h5> Hobbies </h5>
+                  <p> I enjoy playing badminton, guitar. And I also spent time origami in my free time.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 container education-section">
+                  <img src="./images/coding.jpeg" class="education-img">
+                  <h5> Skills </h5>
+                  <p><span> C/C++ </span> <span> ★★★★★  </span></p>
+                  <p><span> Python </span> <span> ★★★★  </span></p>
+                  <p><span> JavaScript </span> <span> ★★★  </span></p>
+                  <p><span> HTML </span> <span> ★★★  </span></p> 
+                  <p><span> CSS </span> <span> ★★  </span></p>
+                  
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 education-section">
+                  <img src="./images/working.jpg" class="education-img">
+                  <h5> Working experience </h5>
+                  <p> Automation Engineer intern at SAP </p>
+                  <p> Quality Assurance at Tangam </p>
+                  <p> Deep Learning Developer at Canada Ice Service </p>
+                </div>
+              </div>
+            </div> -->
+  </div>
+
+  <hr>
+  <div class="container-fluid" id="projects">
+    <div id="project-carousel" class="carousel slide carousel-dark" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="https://github.com/AEsir777/time_expense_management" target="_blank">
+            <img src="./images/income-project.png" class="carousel-img d-block w-100">
+          </a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>TO DO Web Application</h5>
+            <p>TO DO web application using React as Frontend, Django as API and MangoDB as Database.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="https://github.com/AEsir777/some-data-analysis-project" target="_blank">
+            <img src="./images/ML-project-img.jpg" class="carousel-img d-block w-100">
+          </a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Machine Learning</h5>
+            <p>Some Machine Learning Projects using Tensorflow on forecasting and image recognition.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="https://github.com/AEsir777/cc3k" target="_blank">
+            <img src="./images/cc3k-project-img.png" class="carousel-img d-block w-100">
+          </a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>CC3K</h5>
+            <p>A CC3K game built with C++.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" data-bs-target="#project-carousel" type="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon text-bg-dark" aria-hidden="true"></span>
+        <span class="sr-only visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" data-bs-target="#project-carousel" type="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon text-bg-dark" aria-hidden="true"></span>
+        <span class="sr-only visually-hidden">Next</span>
+      </a>
+    </div>
+  </div>
+</body>
+
+<%- include('footer'); -%>
