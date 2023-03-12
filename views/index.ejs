@@ -1,4 +1,4 @@
-<%- include('header'); -%>
+<%- include('partials/header'); -%>
 
 <body>
   <!-- profile section -->
@@ -18,65 +18,49 @@
 
   <!-- skills section -->
   <div class="container-fluid" id="skills-section">
-    <div class="frontend-skills container">
-      <h2> Frontend Skills </h2>
-      <% frontendSkills.forEach(function(skill) {%>
-        <p><%= skill %></p>
-      <% }); %>
+    <div class="skills-container row text-center">
+      <div class="frontend-skills align-self-baseline container col col-lg-3 col-sm-6">
+        <h2> Frontend Skills </h2>
+        <% frontendSkills.forEach(function(skill) {%>
+          <img src="<%= /images/skill.png %>" class="skills-images" alt=<%= skill %>>
+          <p>
+            <%= skill %>
+          </p>
+          <% }); %>
+      </div>
+    
+      <div class="backend-skills align-self-baseline container col col-lg-3 col-sm-6">
+        <h2> Backtend Skills </h2>
+          <% backendSkills.forEach(function(skill) {%>
+          <p>
+            <%= skill %>
+          </p>
+          <% }); %>
+      </div>
+    
+      <div class="machine-learning-skills align-self-baseline container col col-lg-3 col-sm-6">
+        <h2> Machine Learning Skills </h2>
+          <% MLSkills.forEach(function(skill) {%>
+          <p>
+            <%= skill %>
+          </p>
+          <% }); %>
+      </div>
+    
+      <div class="other-skills align-self-baseline container col col-lg-3 col-sm-6">
+        <h2> Other Skills </h2>
+          <% otherSkills.forEach(function(skill) {%>
+          <p>
+            <%= skill %>
+          </p>
+          <% }); %>
+      </div>
     </div>
-    <div class="backend-skills container">
-      <h2> Backtend Skills </h2>
-      <% backendSkills.forEach(function(skill) {%>
-        <p><%= skill %></p>
-      <% }); %>
-    </div>
-    <div class="machine-learning-skills container">
-      <h2> Machine Learning Skills </h2>
-      <% MLSkills.forEach(function(skill) {%>
-        <p><%= skill %></p>
-      <% }); %>
-    </div>
-    <div class="other-skills container">
-      <h2> Other Skills </h2>
-      <% otherSkills.forEach(function(skill) {%>
-        <p><%= skill %></p>
-      <% }); %>
-    </div>
-    <!--            <div class="container">
-               <div class="row big-education text-light">
-                <div class="col-lg-3 col-md-6 col-sm-12 container education-section">
-                  <img src="./images/uwaterloo.png" class="education-img">
-                  <h5> Education </h5>
-                  <p> 3A Data Science </p>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 container education-section">
-                  <img src="./images/hobbies.jpg" class="education-img">
-                  <h5> Hobbies </h5>
-                  <p> I enjoy playing badminton, guitar. And I also spent time origami in my free time.</p>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 container education-section">
-                  <img src="./images/coding.jpeg" class="education-img">
-                  <h5> Skills </h5>
-                  <p><span> C/C++ </span> <span> ★★★★★  </span></p>
-                  <p><span> Python </span> <span> ★★★★  </span></p>
-                  <p><span> JavaScript </span> <span> ★★★  </span></p>
-                  <p><span> HTML </span> <span> ★★★  </span></p> 
-                  <p><span> CSS </span> <span> ★★  </span></p>
-                  
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 education-section">
-                  <img src="./images/working.jpg" class="education-img">
-                  <h5> Working experience </h5>
-                  <p> Automation Engineer intern at SAP </p>
-                  <p> Quality Assurance at Tangam </p>
-                  <p> Deep Learning Developer at Canada Ice Service </p>
-                </div>
-              </div>
-            </div> -->
   </div>
 
   <hr>
-  <div class="container-fluid" id="projects">
+
+  <div class="container-fluid" id="projects-section">
     <div id="project-carousel" class="carousel slide carousel-dark" data-bs-ride="carousel" data-bs-interval="5000">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="0" class="active" aria-current="true"
@@ -125,4 +109,4 @@
   </div>
 </body>
 
-<%- include('footer'); -%>
+<%- include('partials/footer'); -%>

@@ -60,31 +60,15 @@ hr {
 }
 
 
-/*Education*/
-/* .big-education{
-    background: rgba(18, 19, 19, 0.6);
-}
-
-
-.education-section {
-    padding: 3% !important;
-    height: 50%;
-}
-
-
-.education-img{
-    object-fit: cover;
-    width: 10rem;
-    height: 10rem;
-    border-radius: 25%;
-}
-
-
-p {
+/*skills*/
+.skills-container{
+    padding-top: 3%;
     display: flex;
-    justify-content:space-between;
-    margin: 0.1rem !important;
-} */
+    margin: 13% 13% !important;
+    flex-direction: row;
+    align-items: center; 
+    background-color: rgba(18, 19, 19, 0.3);
+}
 
 /* Projects */
 #projects{
