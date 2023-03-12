@@ -22,9 +22,9 @@
       <div class="frontend-skills align-self-baseline container col col-lg-3 col-sm-6">
         <h2> Frontend Skills </h2>
         <% frontendSkills.forEach(function(skill) {%>
-          <img src="<%= /images/skill.png %>" class="skills-images" alt=<%= skill %>>
+          <img src="<%= skill.href %>" class="skills-images" alt=<%= skill %>>
           <p>
-            <%= skill %>
+            <%= skill.text %>
           </p>
           <% }); %>
       </div>
@@ -32,27 +32,30 @@
       <div class="backend-skills align-self-baseline container col col-lg-3 col-sm-6">
         <h2> Backtend Skills </h2>
           <% backendSkills.forEach(function(skill) {%>
-          <p>
-            <%= skill %>
-          </p>
+            <img src="<%= skill.href %>" class="skills-images" alt=<%= skill %>>
+            <p>
+              <%= skill.text %>
+            </p>
           <% }); %>
       </div>
     
       <div class="machine-learning-skills align-self-baseline container col col-lg-3 col-sm-6">
         <h2> Machine Learning Skills </h2>
           <% MLSkills.forEach(function(skill) {%>
-          <p>
-            <%= skill %>
-          </p>
+            <img src="<%= skill.href %>" class="skills-images" alt=<%= skill %>>
+            <p>
+              <%= skill.text %>
+            </p>
           <% }); %>
       </div>
     
       <div class="other-skills align-self-baseline container col col-lg-3 col-sm-6">
         <h2> Other Skills </h2>
           <% otherSkills.forEach(function(skill) {%>
-          <p>
-            <%= skill %>
-          </p>
+            <img src="<%= skill.href %>" class="skills-images" alt=<%= skill %>>
+            <p>
+              <%= skill.text %>
+            </p>
           <% }); %>
       </div>
     </div>
