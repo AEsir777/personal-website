@@ -24,6 +24,7 @@ hr {
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 100;
 }
 
 /* introduction-section */
@@ -62,9 +63,9 @@ hr {
 
 /*skills*/
 .skills-container{
-    padding-top: 3%;
+    padding: 3% !important;
     display: flex;
-    margin: 13% 13% !important;
+    margin: 3% 3% !important;
     flex-direction: row;
     align-items: center; 
 }
@@ -75,16 +76,28 @@ hr {
 }
 
 /* Projects */
-#projects{
-    padding: 0%;
-}
-
-.carousel-container {
-    padding: 0% !important;
-}
-
-.carousel-caption{
+.carousel-caption {
     color: black !important;
+}
+
+.project-totle{
+    min-width: fit-content;
+}
+
+.project-title-list {
+    max-height: 5rem;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.project-title-list::-webkit-scrollbar { 
+    display: none;  
+}
+
+.project-title-list li {
+    border-style: solid none none !important;
+    cursor: pointer;
+    list-style-type: none;
 }
 
 /* Footer */

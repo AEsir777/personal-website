@@ -63,51 +63,55 @@
 
   <hr>
 
+  <!-- projects section  -->
   <div class="container-fluid" id="projects-section">
-    <div id="project-carousel" class="carousel slide carousel-dark" data-bs-ride="carousel" data-bs-interval="5000">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="0" class="active" aria-current="true"
-          aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div class="row">
+      <div id="project-carousel" class="carousel slide carousel-dark col col-lg-6 col-md-7 col-sm-8" 
+      data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-indicators">
+          <button data-bs-target="#project-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button data-bs-target="#project-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button data-bs-target="#project-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="./images/income-project.png" class="carousel-img d-block w-100">
+              <a class="btn btn-outline-light" href="https://github.com/AEsir777/time_expense_management" target="_blank"> Code </button>
+              <a class="btn btn-outline-light"> Demo </button>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>TO DO Web Application</h5>
+              <p>TO DO web application using React as Frontend, Django as API and MangoDB as Database.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="https://github.com/AEsir777/some-data-analysis-project" target="_blank">
+              <img src="./images/ML-project-img.jpg" class="carousel-img d-block w-100">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Machine Learning</h5>
+              <p>Some Machine Learning Projects using Tensorflow on forecasting and image recognition.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="https://github.com/AEsir777/cc3k" target="_blank">
+              <img src="./images/cc3k-project-img.png" class="carousel-img d-block w-100">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>CC3K</h5>
+              <p>A CC3K game built with C++.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <a href="https://github.com/AEsir777/time_expense_management" target="_blank">
-            <img src="./images/income-project.png" class="carousel-img d-block w-100">
-          </a>
-          <div class="carousel-caption d-none d-md-block">
-            <h5>TO DO Web Application</h5>
-            <p>TO DO web application using React as Frontend, Django as API and MangoDB as Database.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <a href="https://github.com/AEsir777/some-data-analysis-project" target="_blank">
-            <img src="./images/ML-project-img.jpg" class="carousel-img d-block w-100">
-          </a>
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Machine Learning</h5>
-            <p>Some Machine Learning Projects using Tensorflow on forecasting and image recognition.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <a href="https://github.com/AEsir777/cc3k" target="_blank">
-            <img src="./images/cc3k-project-img.png" class="carousel-img d-block w-100">
-          </a>
-          <div class="carousel-caption d-none d-md-block">
-            <h5>CC3K</h5>
-            <p>A CC3K game built with C++.</p>
-          </div>
-        </div>
+  
+      <div class="project-titile col col-lg-6 col-md-5 col-sm-4">
+        <ul class="project-title-list">
+          <li> <a data-bs-target="#project-carousel" data-bs-slide-to="0"> TO DO Web Application </a> </li>
+          <li> <a data-bs-target="#project-carousel" data-bs-slide-to="1"> Machine Learning </a> </li>
+          <li> <a data-bs-target="#project-carousel" data-bs-slide-to="2"> CC3k </a> </li>
+        </ul>
       </div>
-      <a class="carousel-control-prev" data-bs-target="#project-carousel" type="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon text-bg-dark" aria-hidden="true"></span>
-        <span class="sr-only visually-hidden">Previous</span>
-      </a>
-      <a class="carousel-control-next" data-bs-target="#project-carousel" type="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon text-bg-dark" aria-hidden="true"></span>
-        <span class="sr-only visually-hidden">Next</span>
-      </a>
+  
     </div>
   </div>
 </body>
