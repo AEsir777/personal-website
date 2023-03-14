@@ -80,7 +80,11 @@ hr {
     color: black !important;
 }
 
-.project-totle{
+.project-btn {
+    margin: 2% 5% !important;
+}
+
+.project-title{
     min-width: fit-content;
 }
 
