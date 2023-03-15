@@ -100,8 +100,12 @@ hr {
 
 .project-title-list li {
     border-style: solid none none !important;
-    cursor: pointer;
-    list-style-type: none;
+    cursor: pointer !important;
+    list-style-type: none !important;
+}
+
+.project-title-list li .active {
+    font: 2rem !important;
 }
 
 /* Footer */
