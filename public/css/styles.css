@@ -81,9 +81,12 @@ hr {
 }
 
 #project-carousel {
-    padding: 0;
     padding-left: 2%;
 }
+
+.carousel-indicators {
+    margin-bottom: 4% !important;
+} 
 
 /* carousel slides */
 .project-item {
@@ -99,6 +102,7 @@ hr {
 }
 
 .carousel-img {
+    margin: 1% 0%;
     border-radius: 2rem;
 }
 
@@ -106,12 +110,13 @@ hr {
     margin: 2% 5% !important;
 }
 
+/* Project title */
 .project-title{
+    margin-top: 2% !important;
     min-width: fit-content;
 }
 
 .project-title-list {
-    max-height: 5rem;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
 }
@@ -124,10 +129,7 @@ hr {
     border-style: solid none none !important;
     cursor: pointer !important;
     list-style-type: none !important;
-}
-
-.project-title-list li .active {
-    font: 2rem !important;
+    font-size: 1.5rem !important;
 }
 
 /* Footer */
