@@ -104,6 +104,7 @@ hr {
 .carousel-img {
     margin: 1% 0%;
     border-radius: 2rem;
+    width: fit-content;
 }
 
 .project-btn {
@@ -145,6 +146,10 @@ hr {
 
 /* Footer */
 .contact {
-    width: 1rem;
-    height: 1rem;
+    padding: 0.2rem 0.4rem !important;
+}
+
+.contact-img {
+    width: 1.8rem;
+    height: 1.8rem;
 }

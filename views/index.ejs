@@ -68,49 +68,36 @@
     <div class="row">
       <div id="project-carousel" class="carousel slide carousel-dark col col-lg-6 col-md-7 col-sm-8" 
       data-bs-ride="carousel" data-bs-interval="500000">
+
+        <!-- bottom indicators -->
         <div class="carousel-indicators">
           <button data-bs-target="#project-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button data-bs-target="#project-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button data-bs-target="#project-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+
         <div class="carousel-inner container">
-          <!-- first slides -->
-          <div class="carousel-item active project-item bg-dark container-fluid">
-            <img src="./images/income-project.png" class="carousel-img d-block w-100">
-            <h5>TO DO Web Application</h5>
-            <p>TO DO web application using React as Frontend, Django as API and MangoDB as Database.</p>
-
-            <div class="d-flex justify-content-around">
-              <a class="project-btn btn btn-outline-light" href="https://github.com/AEsir777/time_expense_management" target="_blank"> Github </a>   
-              <a class="project-btn btn btn-outline-light"> Site </a> 
-            </div>                    
-          </div>
-
-          <div class="carousel-item">
-            <a href="https://github.com/AEsir777/some-data-analysis-project" target="_blank">
-              <img src="./images/ML-project-img.jpg" class="carousel-img d-block w-100">
-            </a>
-            <h5>Machine Learning</h5>
-            <p>Some Machine Learning Projects using Tensorflow on forecasting and image recognition.</p>
-          </div>
-
-          <div class="carousel-item">
-            <a href="https://github.com/AEsir777/cc3k" target="_blank">
-              <img src="./images/cc3k-project-img.png" class="carousel-img d-block w-100">
-            </a>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>CC3K</h5>
-              <p>A CC3K game built with C++.</p>
+          <!-- slides -->
+          <% projects.forEach(function(project) {%>
+            <div class="carousel-item project-item bg-dark container-fluid">
+              <img src="<%= project.imagePath %>" class="carousel-img d-block w-100">
+              <h5> <%= project.title %> </h5>
+              <p> <%= project.description %> </p>
+              <div class="d-flex justify-content-around">
+                <a class="project-btn btn btn-outline-light" href="<%= project.github %>" target="_blank"> Github </a>   
+                <a class="project-btn btn btn-outline-light" href="<%= project.demoLink %>" target="_blank"> Site </a> 
+              </div>         
             </div>
-          </div> 
+          <% }); %>  
         </div>
       </div>
-  
+      
+      <!-- project title -->
       <div class="project-title col col-lg-6 col-md-5 col-sm-4">
         <ul class="project-title-list">
-          <li data-bs-target="#project-carousel" class="active" aria-current="true" data-bs-slide-to="0"> TO DO Web Application </li>
-          <li data-bs-target="#project-carousel" data-bs-slide-to="1"> Machine Learning </li>
-          <li data-bs-target="#project-carousel" data-bs-slide-to="2"> CC3k </li>
+          <% projects.forEach(function(project, index) {%>
+            <li data-bs-target="#project-carousel" data-bs-slide-to="<%= index %>"> <%= project.title %> </li>  
+          <% }); %>   
         </ul>
       </div>
   

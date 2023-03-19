@@ -5,6 +5,7 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({extended: true}));
 app.use(express.static('public'));
 
+// skills constants
 const frontendSkills = [
   {
     text: "React",
@@ -23,6 +24,7 @@ const frontendSkills = [
     href: "images/JavaScript.png",
   },
 ];
+
 const backendSkills = [
   {
     text: "Python",
@@ -45,6 +47,7 @@ const backendSkills = [
     href: "images/Django.png",
   },
 ];
+
 const MLSkills = [
   {
     text: "TensorFlow",
@@ -82,12 +85,38 @@ const otherSkills = [
   },
 ];
 
+// project dictionary
+const projects = [
+  {
+    title: "TO DO Web Application",
+    description: "TO DO web application using React as Frontend, Django as API and MangoDB as Database.",
+    imagePath: "./images/income-project.png",
+    github: "https://github.com/AEsir777/time_expense_management",
+    demoLink: ""
+  },
+  {
+    title: "Machine Learning",
+    description: "Some Machine Learning Projects using Tensorflow on forecasting and image recognition.",
+    imagePath: "./images/ML-project-img.jpg",
+    github: "https://github.com/AEsir777/some-data-analysis-project",
+    demoLink: ""
+  },
+  {
+    title: "CC3K",
+    description: "A CC3K game built with C++.",
+    imagePath: "./images/cc3k-project-img.png",
+    github: "https://github.com/AEsir777/cc3k",
+    demoLink: ""
+  },
+];
+
 app.get("/", (req, res) => {
   const parameters = {
     frontendSkills: frontendSkills,
     backendSkills: backendSkills,
     MLSkills: MLSkills,
     otherSkills: otherSkills,
+    projects: projects
   };
   res.render("index", parameters);
 });
