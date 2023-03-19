@@ -133,6 +133,14 @@ hr {
     cursor: pointer !important;
     list-style-type: none !important;
     font-size: 1.5rem !important;
+    border-color: #dcf5f1;
+    color: #dcf5f1;
+}
+
+.project-title-list li.active {
+    font-size: 2rem !important;
+    color: #a3f1e3 !important;
+    text-decoration: underline;
 }
 
 /* Footer */
