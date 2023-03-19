@@ -108,10 +108,13 @@ hr {
 
 .project-btn {
     margin: 2% 5% !important;
+    z-index: 4 !important;
 }
 
 /* Project title */
 .project-title{
+    margin: 0 !important;
+    position: relative !important;
     margin-top: 2% !important;
     min-width: fit-content;
 }
