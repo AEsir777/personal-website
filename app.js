@@ -88,25 +88,28 @@ const otherSkills = [
 // project dictionary
 const projects = [
   {
+    id: "0",
     title: "TO DO Web Application",
     description: "TO DO web application using React as Frontend, Django as API and MangoDB as Database.",
     imagePath: "./images/income-project.png",
     github: "https://github.com/AEsir777/time_expense_management",
-    demoLink: ""
+    demoLink: "/projects/0"
   },
   {
+    id: "1",
     title: "Machine Learning",
     description: "Some Machine Learning Projects using Tensorflow on forecasting and image recognition.",
     imagePath: "./images/ML-project-img.jpg",
     github: "https://github.com/AEsir777/some-data-analysis-project",
-    demoLink: ""
+    demoLink: "/projects/1"
   },
   {
+    id: "2",
     title: "CC3K",
     description: "A CC3K game built with C++.",
     imagePath: "./images/cc3k-project-img.png",
     github: "https://github.com/AEsir777/cc3k",
-    demoLink: ""
+    demoLink: "/projects/2"
   },
 ];
 
@@ -119,6 +122,18 @@ app.get("/", (req, res) => {
     projects: projects
   };
   res.render("index", parameters);
+});
+
+app.get("/projects/:projectId", (req, res) => {
+  const id = req.params.projectId;
+  projects.forEach((project) => {
+    if ( project.id === id ) {
+      res.send(project.title);
+    } else {
+      res.send("Invalid project ID.");
+    }
+  });
+  
 });
 
 app.listen(process.env.PORT || 3000, function(){

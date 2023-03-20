@@ -66,8 +66,8 @@
   <!-- projects section  -->
   <div class="container-fluid" id="projects-section">
     <div class="row">
-      <div id="project-carousel" class="carousel slide carousel-dark col col-lg-6 col-md-7 col-sm-8" 
-      data-bs-ride="carousel" data-bs-interval="500000">
+      <div id="project-carousel" class="carousel slide col col-lg-6 col-md-7 col-sm-8" 
+      data-bs-ride="carousel" data-bs-interval="8000">
 
         <!-- bottom indicators -->
         <div class="carousel-indicators">
@@ -79,7 +79,7 @@
         <div class="carousel-inner container">
           <!-- slides -->
           <% projects.forEach(function(project) {%>
-            <div class="carousel-item project-item bg-dark container-fluid">
+            <div class="carousel-item project-item container-fluid">
               <img src="<%= project.imagePath %>" class="carousel-img d-block w-100">
               <h5> <%= project.title %> </h5>
               <p> <%= project.description %> </p>

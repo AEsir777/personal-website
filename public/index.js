@@ -1,10 +1,12 @@
 console.log('Javascript connected')
 
 function completePageRendering() {
+  // add active class
   $(".carousel-item").first().addClass("active");
   $(".project-title-list li").first().addClass("active");
   $(".project-title-list li").first().attr("aria-current", "true");
 
+  // change according to slides carousel second indicator
   $(".carousel").on("slid.bs.carousel", function () {
     $(".project-title-list li").removeClass("active");
     $(".project-title-list li").removeAttr("aria-current");
@@ -18,4 +20,6 @@ function completePageRendering() {
 
     console.log(slide);
   });
-}
+};
+
+completePageRendering();

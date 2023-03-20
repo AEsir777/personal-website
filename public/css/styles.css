@@ -93,12 +93,13 @@ hr {
     margin: 2%;
     text-align: center;
     border-radius: 2rem !important;
+    background-color: rgba(18, 19, 19, 0.3) !important;
     box-shadow: 0 0 0 1px rgba(18, 22, 16, 0.5), 0 2px 4px rgba(107, 116, 109, 0.3),
         0 2px 4px rgba(174, 184, 176, 0.5);
 }
 
 .project-item:hover {
-    background-color: #343a40 !important;
+    background-color: rgba(18, 19, 19, 0.6) !important;
 }
 
 .carousel-img {
@@ -130,12 +131,14 @@ hr {
 }
 
 .project-title-list li {
-    border-style: solid none none !important;
+    border-style: none none solid !important;
     cursor: pointer !important;
     list-style-type: none !important;
     font-size: 1.5rem !important;
     border-color: #dcf5f1;
     color: #dcf5f1;
+    background-color: rgba(18, 19, 19, 0.1) !important;
+    padding-top: 2%;
 }
 
 .project-title-list li.active {
