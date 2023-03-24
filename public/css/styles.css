@@ -105,7 +105,6 @@ hr {
 .carousel-img {
     margin: 1% 0%;
     border-radius: 2rem;
-    width: fit-content;
 }
 
 .project-btn {
@@ -145,6 +144,12 @@ hr {
     font-size: 2rem !important;
     color: #a3f1e3 !important;
     text-decoration: underline;
+}
+
+.tech-used {
+    font-size: 1rem !important;
+    float: right;
+    color: rgba(256, 256, 256, 0.6);
 }
 
 /* Footer */

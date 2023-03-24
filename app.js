@@ -93,7 +93,8 @@ const projects = [
     description: "TO DO web application using React as Frontend, Django as API and MangoDB as Database.",
     imagePath: "./images/income-project.png",
     github: "https://github.com/AEsir777/time_expense_management",
-    demoLink: "/projects/0"
+    demoLink: "/projects/0",
+    tech: ['React', 'Django', 'MangoDB']
   },
   {
     id: "1",
@@ -101,7 +102,8 @@ const projects = [
     description: "Some Machine Learning Projects using Tensorflow on forecasting and image recognition.",
     imagePath: "./images/ML-project-img.jpg",
     github: "https://github.com/AEsir777/some-data-analysis-project",
-    demoLink: "/projects/1"
+    demoLink: "/projects/1",
+    tech: ['TensorFlow', 'Sklearn']
   },
   {
     id: "2",
@@ -109,7 +111,8 @@ const projects = [
     description: "A CC3K game built with C++.",
     imagePath: "./images/cc3k-project-img.png",
     github: "https://github.com/AEsir777/cc3k",
-    demoLink: "/projects/2"
+    demoLink: "/projects/2",
+    tech: ['C++', 'MVC']
   },
 ];
 
