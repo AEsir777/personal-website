@@ -93,11 +93,11 @@
       </div>
       
       <!-- project title -->
-      <div class="project-title col col-lg-6 col-md-5 col-sm-4">
+      <div class="project-title-container col col-lg-6 col-md-5 col-sm-4">
         <ul class="project-title-list">
           <% projects.forEach(function(project, index) {%>
             <li data-bs-target="#project-carousel" data-bs-slide-to="<%= index %>"> 
-              <span> <%= project.title %>  </span>
+              <span class="project-title"> <%= project.title %>  </span>
               <span class="tech-used"> <%= project.tech %> </span>
             </li>  
           <% }); %>   

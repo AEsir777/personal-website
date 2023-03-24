@@ -105,6 +105,7 @@ hr {
 .carousel-img {
     margin: 1% 0%;
     border-radius: 2rem;
+    height: 20%;
 }
 
 .project-btn {
@@ -113,7 +114,7 @@ hr {
 }
 
 /* Project title */
-.project-title{
+.project-title-container{
     margin: 0 !important;
     position: relative !important;
     margin-top: 2% !important;
@@ -123,6 +124,12 @@ hr {
 .project-title-list {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+    padding: 1% 1%;
+    box-shadow: 0 0 0 1px rgba(18, 22, 16, 0.5), 0 2px 4px rgba(107, 116, 109, 0.3),
+        0 2px 4px rgba(174, 184, 176, 0.5);
+    border-style: solid;
+    border-color:rgba(167, 167, 167, 0.2);
+    background: linear-gradient(to right bottom, rgba(18, 19, 19, 0.5), rgba(18, 19, 19, 0.8));
 }
 
 .project-title-list::-webkit-scrollbar { 
@@ -130,20 +137,25 @@ hr {
 }
 
 .project-title-list li {
-    border-style: none none solid !important;
+    user-select: none;
+    border-style: none none solid ;
     cursor: pointer !important;
     list-style-type: none !important;
     font-size: 1.5rem !important;
     border-color: #dcf5f1;
-    color: #dcf5f1;
-    background-color: rgba(18, 19, 19, 0.1) !important;
     padding-top: 2%;
 }
 
+.project-title-list li:hover{
+    background-color: rgba(176, 233, 233, 0.1) !important;
+}
+
 .project-title-list li.active {
-    font-size: 2rem !important;
     color: #a3f1e3 !important;
-    text-decoration: underline;
+}
+
+.project-title {
+    height: 4rem;
 }
 
 .tech-used {
