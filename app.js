@@ -114,6 +114,15 @@ const projects = [
     demoLink: "/projects/2",
     tech: ['C++', 'MVC']
   },
+  {
+    id: "3",
+    title: "Protein data analysis",
+    description: "Preprocess the imblanced dataset and train random forest model for prediction. Model is hosted on hugging face.",
+    imagePath: "",
+    github: "https://github.com/AEsir777/CxC_project",
+    demoLink: "https://huggingface.co/spaces/AEsir777/CxC_project",
+    tech: ['Python', 'Sklearn']
+  },
 ];
 
 app.get("/", (req, res) => {
