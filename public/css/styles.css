@@ -140,11 +140,7 @@ hr {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     padding: 1% 1%;
-    box-shadow: 0 0 0 1px rgba(18, 22, 16, 0.5), 0 2px 4px rgba(107, 116, 109, 0.3),
-        0 2px 4px rgba(174, 184, 176, 0.5);
-    border-style: solid;
-    border-color:rgba(167, 167, 167, 0.2);
-    background: linear-gradient(to right bottom, rgba(18, 19, 19, 0.5), rgba(18, 19, 19, 0.8));
+    
 }
 
 .project-title-list::-webkit-scrollbar { 
@@ -152,21 +148,32 @@ hr {
 }
 
 .project-title-list li {
-    user-select: none;
     border-style: none none solid ;
+    border-color:rgb(108, 168, 128);
+    border-radius: 1rem;
+    box-shadow: 0 0 0 1px rgba(18, 22, 16, 0.5), 0 2px 4px rgba(107, 116, 109, 0.3),
+        0 2px 4px rgba(174, 184, 176, 0.5);
+    background: linear-gradient(to right bottom, rgba(18, 19, 19, 0.5), rgba(18, 19, 19, 0.3));
+    color: #ffffff;
+
+    user-select: none;
     cursor: pointer !important;
     list-style-type: none !important;
     font-size: 1.5rem !important;
-    border-color: #dcf5f1;
-    padding-top: 2%;
+
+    padding: 1% 2% 0% 2%;
+    margin: 2%;
 }
 
 .project-title-list li:hover{
-    background-color: rgba(176, 233, 233, 0.1) !important;
+    background: linear-gradient(to right bottom, rgba(18, 19, 19, 0.9), rgba(18, 19, 19, 0.7));
+    border-color: #2b7067;
 }
 
 .project-title-list li.active {
-    color: #a3f1e3 !important;
+    color:#dcf5f1;
+    background: linear-gradient(to right bottom, rgba(18, 19, 19, 0.9), rgba(18, 19, 19, 0.7));
+    border-color: #2b7067;
 }
 
 .project-title {
