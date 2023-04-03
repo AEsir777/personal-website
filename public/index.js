@@ -4,6 +4,9 @@ const arrowElement = '<span class="arrow"> &#10003;  <span>';
 
 function completePageRendering() {
   // add active class
+  $(".carousel-indicators button").first().addClass("active");
+  $(".carousel-indicators button").attr("aria-current", "true");
+
   $(".carousel-item").first().addClass("active");
   $(".project-title-list li").first().addClass("active");
   $(".project-title-list li").first().attr("aria-current", "true");

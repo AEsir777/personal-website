@@ -9,79 +9,71 @@ app.use(express.static('public'));
 const frontendSkills = [
   {
     text: "React",
-    href: "images/React.png",
+    href: "images/skills/React.png",
   },
   {
     text: "HTML",
-    href: "images/HTML.png",
+    href: "images/skills/HTML.png",
   },
   {
     text: "CSS",
-    href: "images/CSS.png",
+    href: "images/skills/CSS.png",
   },
   {
     text: "JavaScript",
-    href: "images/JavaScript.png",
+    href: "images/skills/JavaScript.png",
   },
 ];
 
 const backendSkills = [
   {
-    text: "Python",
-    href: "images/Python.png",
-  },
-  {
-    text: "SQL",
-    href: "images/SQL.png",
-  },
-  {
     text: "Node.JS",
-    href: "images/Node.JS.png",
-  },
-  {
-    text: "Express",
-    href: "images/Express.png",
+    href: "images/skills/Node.JS.png",
   },
   {
     text: "Django",
-    href: "images/Django.png",
+    href: "images/skills/Django.png",
+  },
+  {
+    text: "SQL",
+    href: "images/skills/SQL.png",
+  },
+  {
+    text: "MongoDB",
+    href: "images/skills/mongoDB.png",
   },
 ];
 
 const MLSkills = [
   {
+    text: "Python",
+    href: "images/skills/Python.png",
+  },
+  {
     text: "TensorFlow",
-    href: "images/TensorFlow.png",
-  },
-  {
-    text: "Scikit-learn",
-    href: "images/Scikit-learn.png",
-  },
-  {
-    text: "Jupyter",
-    href: "images/Jupyter.png",
+    href: "images/skills/TensorFlow.png",
   },
   {
     text: "Anaconda",
-    href: "images/Anaconda.png",
+    href: "images/skills/Anaconda.png",
   },
 ];
 const otherSkills = [
   {
     text: "C++",
-    href: "images/C++.png",
+    href: "images/skills/C++.png",
   },
   {
     text: "Linux",
-    href: "images/Linux.png",
+    href: "images/skills/Linux.png",
   },
   {
     text: "Bash",
-    href: "images/Bash.png",
+    href: "images/skills/Bash.png",
   },
   {
     text: "Git",
-    href: "images/Git.png",
+    href: "images/skills/Git.png",
   },
 ];
 

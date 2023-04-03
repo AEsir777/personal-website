@@ -7,8 +7,8 @@
       <img id="my-image" class="img-fluid" alt="Kebing Liu Profile" src="./images/myself.png">
       <div class="brief-intro">
         <h1 class="name">Hello, I'm Kebing Liu</h1>
-        <p> I am a 3A BMath Data Science Student at University of Waterloo from Chongqing, China. <br>
-          I love learning new stuffs and applying what I have learn to build projects! </p>
+        <p> I am a 3A BMath Data Science Student at University of Waterloo. <br>
+          I love learning new stuffs and build from my own ideas! <br></p>
       </div>
       <a href="pdfs/Resume.pdf" class="btn btn-outline-light resume-link" target="_blank"> Checkout My Resume </a>
     </div>
@@ -18,45 +18,45 @@
 
   <!-- skills section -->
   <div class="container-fluid" id="skills-section">
-    <div class="skills-container row text-center">
+    <div class="skills-content-container row text-center">
       <div class="frontend-skills align-self-baseline container col col-lg-3 col-sm-6">
-        <h2> Frontend Skills </h2>
+        <h2 class="skills-title"> Frontend Skills </h2>
         <% frontendSkills.forEach(function(skill) {%>
+        <!-- <div class="skill-container"> -->
           <img src="<%= skill.href %>" class="skills-images" alt=<%= skill %>>
-          <p>
-            <%= skill.text %>
-          </p>
-          <% }); %>
+          <p> <%= skill.text %> </p>
+        <!-- </div> -->
+        <% }); %>
       </div>
     
       <div class="backend-skills align-self-baseline container col col-lg-3 col-sm-6">
-        <h2> Backtend Skills </h2>
-          <% backendSkills.forEach(function(skill) {%>
+        <h2 class="skills-title"> Backtend Skills </h2>
+        <% backendSkills.forEach(function(skill) {%>
+        <!-- <div class="skill-container"> -->
             <img src="<%= skill.href %>" class="skills-images" alt=<%= skill %>>
-            <p>
-              <%= skill.text %>
-            </p>
-          <% }); %>
+            <p> <%= skill.text %> </p>
+        <!-- </div> -->
+        <% }); %>
       </div>
     
       <div class="machine-learning-skills align-self-baseline container col col-lg-3 col-sm-6">
-        <h2> Machine Learning Skills </h2>
-          <% MLSkills.forEach(function(skill) {%>
+        <h2 class="skills-title"> Machine Learning Skills </h2>
+        <% MLSkills.forEach(function(skill) {%>
+        <!-- <div class="skill-container"> -->
             <img src="<%= skill.href %>" class="skills-images" alt=<%= skill %>>
-            <p>
-              <%= skill.text %>
-            </p>
-          <% }); %>
+            <p> <%= skill.text %> </p>
+        <!-- </div> -->
+        <% }); %>
       </div>
     
       <div class="other-skills align-self-baseline container col col-lg-3 col-sm-6">
-        <h2> Other Skills </h2>
-          <% otherSkills.forEach(function(skill) {%>
+        <h2 class="skills-title"> Other Skills </h2>
+        <% otherSkills.forEach(function(skill) {%>
+        <!-- <div class="skill-container"> -->
             <img src="<%= skill.href %>" class="skills-images" alt=<%= skill %>>
-            <p>
-              <%= skill.text %>
-            </p>
-          <% }); %>
+            <p> <%= skill.text %> </p>
+        <!-- </div> -->
+        <% }); %>
       </div>
     </div>
   </div>
@@ -71,9 +71,9 @@
 
         <!-- bottom indicators -->
         <div class="carousel-indicators">
-          <button data-bs-target="#project-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button data-bs-target="#project-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button data-bs-target="#project-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <% projects.forEach(function(project, index) {%>
+            <button data-bs-target="#project-carousel" data-bs-slide-to="<%= index %>" aria-label="Slide <%= index %>"></button>
+          <% }); %> 
         </div>
 
         <div class="carousel-inner container">
