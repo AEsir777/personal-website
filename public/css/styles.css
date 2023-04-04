@@ -149,7 +149,7 @@ hr {
 
 .project-title-list li {
     border-style: none none solid ;
-    border-color:rgb(108, 168, 128);
+    border-color:#1f554e;
     border-radius: 1rem;
     box-shadow: 0 0 0 1px rgba(18, 22, 16, 0.5), 0 2px 4px rgba(107, 116, 109, 0.3),
         0 2px 4px rgba(174, 184, 176, 0.5);
@@ -167,13 +167,13 @@ hr {
 
 .project-title-list li:hover{
     background: linear-gradient(to right bottom, rgba(18, 19, 19, 0.9), rgba(18, 19, 19, 0.7));
-    border-color: #2b7067;
+    border-color: #bafff6;
 }
 
 .project-title-list li.active {
-    color:#dcf5f1;
+    color:#9bffee;
     background: linear-gradient(to right bottom, rgba(18, 19, 19, 0.9), rgba(18, 19, 19, 0.7));
-    border-color: #2b7067;
+    border-color: rgb(151, 218, 175);
 }
 
 .project-title {
