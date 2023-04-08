@@ -1,4 +1,5 @@
-﻿- [ ] fix skills section color
+﻿- [ X ] fix skills section skill img size
+- [ ] fix skills section color
 - [ ] fix skills section grid
 - [ ] update my project
 - [ ] migrate the project to MongoDB

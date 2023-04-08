@@ -9,30 +9,30 @@ app.use(express.static('public'));
 const frontendSkills = [
   {
     text: "React",
-    href: "images/skills/React.png",
+    href: "images/skills/React.svg",
   },
   {
     text: "HTML",
-    href: "images/skills/HTML.png",
+    href: "images/skills/HTML.svg",
   },
   {
     text: "CSS",
-    href: "images/skills/CSS.png",
+    href: "images/skills/CSS.svg",
   },
   {
     text: "JavaScript",
-    href: "images/skills/JavaScript.png",
+    href: "images/skills/JavaScript.svg",
   },
 ];
 
 const backendSkills = [
   {
     text: "Node.JS",
-    href: "images/skills/Node.JS.png",
+    href: "images/skills/Node.JS.svg",
   },
   {
     text: "Django",
-    href: "images/skills/Django.png",
+    href: "images/skills/Django.svg",
   },
   {
     text: "SQL",
@@ -40,40 +40,40 @@ const backendSkills = [
   },
   {
     text: "MongoDB",
-    href: "images/skills/mongoDB.png",
+    href: "images/skills/MongoDB.svg",
   },
 ];
 
 const MLSkills = [
   {
     text: "Python",
-    href: "images/skills/Python.png",
+    href: "images/skills/Python.svg",
   },
   {
     text: "TensorFlow",
-    href: "images/skills/TensorFlow.png",
+    href: "images/skills/TensorFlow.svg",
   },
   {
     text: "Anaconda",
-    href: "images/skills/Anaconda.png",
+    href: "images/skills/Anaconda.svg",
   },
 ];
 const otherSkills = [
   {
     text: "C++",
-    href: "images/skills/C++.png",
+    href: "images/skills/C++.svg",
   },
   {
     text: "Linux",
-    href: "images/skills/Linux.png",
+    href: "images/skills/Linux.svg",
   },
   {
     text: "Bash",
-    href: "images/skills/Bash.png",
+    href: "images/skills/Bash.svg",
   },
   {
     text: "Git",
-    href: "images/skills/Git.png",
+    href: "images/skills/Git.svg",
   },
 ];
 

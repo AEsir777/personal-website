@@ -154,7 +154,6 @@ hr {
     box-shadow: 0 0 0 1px rgba(18, 22, 16, 0.5), 0 2px 4px rgba(107, 116, 109, 0.3),
         0 2px 4px rgba(174, 184, 176, 0.5);
     background: linear-gradient(to right bottom, rgba(18, 19, 19, 0.5), rgba(18, 19, 19, 0.3));
-    color: #ffffff;
 
     user-select: none;
     cursor: pointer !important;
