@@ -82,7 +82,7 @@ const projects = [
   {
     id: "0",
     title: "TO DO Web Application",
-    description: "TO DO web application using React as Frontend, Django as API and MangoDB as Database.",
+    description: "TO DO web application using React as to build headless front end UI, Django restframe work to make API request to the database MangoDB.",
     imagePath: "./images/projects/income-project.png",
     github: "https://github.com/AEsir777/time_expense_management",
     demoLink: "/projects/0",

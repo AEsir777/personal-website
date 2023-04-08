@@ -1,5 +1,5 @@
 /* fix screen smaller than sm */
-@media (min-width: 0px) {
+@media (max-width: 576px) {
     .col-sm-6 {
     width: 50% !important;
         flex: 0 0 auto !important;
@@ -20,6 +20,10 @@ hr {
     border-top-width: 0.4rem !important;
     opacity: 1 !important;
     width: 10%;
+}
+
+h5 {
+    text-align: center;
 }
 
 .name {
@@ -114,7 +118,6 @@ hr {
 /* carousel slides */
 .project-item {
     margin: 2%;
-    text-align: center;
     border-radius: 2rem !important;
     background-color: rgba(18, 19, 19, 0.3) !important;
     box-shadow: 0 0 0 1px rgba(18, 22, 16, 0.5), 0 2px 4px rgba(107, 116, 109, 0.3),
@@ -131,8 +134,19 @@ hr {
     height: 20%;
 }
 
+.project-item p {
+    margin-bottom: 0.5rem;
+}
+
+.tech-used {
+    font-size: 1rem !important;
+    float: right;
+    color: rgba(256, 256, 256, 0.6);
+    display: block;
+}
+
 .project-btn {
-    margin: 2% 5% !important;
+    margin: 4% 5% 2%!important;
     z-index: 4 !important;
 }
 
@@ -185,12 +199,6 @@ hr {
 
 .project-title {
     height: 4rem;
-}
-
-.tech-used {
-    font-size: 1rem !important;
-    float: right;
-    color: rgba(256, 256, 256, 0.6);
 }
 
 /* Footer */

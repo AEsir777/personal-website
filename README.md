@@ -1,7 +1,7 @@
 ﻿- [ X ] fix skills section skill img size
 - [ ] fix skills section color
 - [ ] fix skills section grid
-- [ ] update my project
+- [ X ] update my project
 - [ ] migrate the project to MongoDB
 - [ X ] test the sroll function for project title
 - [ ] fix the scroll function for the project title
