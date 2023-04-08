@@ -19,7 +19,7 @@
   <!-- skills section -->
   <div class="container-fluid" id="skills-section">
     <div class="skills-content-container row text-center">
-      <div class="frontend-skills align-self-baseline container col col-lg-3 col-sm-6">
+      <div class="frontend-skills align-self-baseline container col col-lg-3 col-md-6 col-sm-6">
         <h2 class="skills-title"> Frontend Skills </h2>
         <% frontendSkills.forEach(function(skill) {%>
         <!-- <div class="skill-container"> -->
@@ -29,7 +29,7 @@
         <% }); %>
       </div>
     
-      <div class="backend-skills align-self-baseline container col col-lg-3 col-sm-6">
+      <div class="backend-skills align-self-baseline container col col-lg-3 col-md-6 col-sm-6">
         <h2 class="skills-title"> Backtend Skills </h2>
         <% backendSkills.forEach(function(skill) {%>
         <!-- <div class="skill-container"> -->
@@ -39,7 +39,7 @@
         <% }); %>
       </div>
     
-      <div class="machine-learning-skills align-self-baseline container col col-lg-3 col-sm-6">
+      <div class="machine-learning-skills align-self-baseline container col col-lg-3 col-md-6 col-sm-6">
         <h2 class="skills-title"> Machine Learning Skills </h2>
         <% MLSkills.forEach(function(skill) {%>
         <!-- <div class="skill-container"> -->
@@ -49,7 +49,7 @@
         <% }); %>
       </div>
     
-      <div class="other-skills align-self-baseline container col col-lg-3 col-sm-6">
+      <div class="other-skills align-self-baseline container col col-lg-3 col-md-6 col-sm-6">
         <h2 class="skills-title"> Other Skills </h2>
         <% otherSkills.forEach(function(skill) {%>
         <!-- <div class="skill-container"> -->
@@ -66,7 +66,8 @@
   <!-- projects section  -->
   <div class="container-fluid" id="projects-section">
     <div class="row">
-      <div id="project-carousel" class="carousel slide col col-lg-6 col-md-7 col-sm-8" 
+      <!-- left side: carousel -->
+      <div id="project-carousel" class="carousel slide col col-lg-6 col-md-12 col-sm-12" 
       data-bs-ride="carousel" data-bs-interval="8000">
 
         <!-- bottom indicators -->
@@ -92,8 +93,8 @@
         </div>
       </div>
       
-      <!-- project title -->
-      <div class="project-title-container col col-lg-6 col-md-5 col-sm-4">
+      <!-- right side: project title -->
+      <div class="project-title-container col col-lg-6 col-md-12 col-sm-12">
         <ul class="project-title-list container">
           <% projects.forEach(function(project, index) {%>
             <li data-bs-target="#project-carousel" data-bs-slide-to="<%= index %>"> 

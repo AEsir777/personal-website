@@ -33,4 +33,12 @@ function completePageRendering() {
   });
 };
 
+/*  // set the height of the right: project-title to be the same as left part carousel
+function setHeight() {
+  const height = $("#project-carousel").outerHeight(true);
+  console.log(height);
+  $(".project-title-container").height(Math.round(height) + "px");
+} */
+
 completePageRendering();
+// setHeight();

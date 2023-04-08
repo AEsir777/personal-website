@@ -1,3 +1,11 @@
+/* fix screen smaller than sm */
+@media (min-width: 0px) {
+    .col-sm-6 {
+    width: 50% !important;
+        flex: 0 0 auto !important;
+    }
+}
+
 body {
     background: #F9F9F9 top/cover url("../images/background-image-dark.jpg") no-repeat;
     font-family: 'Jost', sans-serif !important;
@@ -140,7 +148,7 @@ hr {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     padding: 1% 1%;
-    
+    min-width: fit-content;
 }
 
 .project-title-list::-webkit-scrollbar { 
@@ -170,7 +178,7 @@ hr {
 }
 
 .project-title-list li.active {
-    color:#9bffee;
+    color:#fdfdfd;
     background: linear-gradient(to right bottom, rgba(18, 19, 19, 0.9), rgba(18, 19, 19, 0.7));
     border-color: rgb(151, 218, 175);
 }

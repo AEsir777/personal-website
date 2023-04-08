@@ -3,7 +3,8 @@
 - [ ] fix skills section grid
 - [ ] update my project
 - [ ] migrate the project to MongoDB
-- [ ] test the sroll function for project title
+- [ X ] test the sroll function for project title
+- [ ] fix the scroll function for the project title
 - [ X ] fix the large screen project title unresponsivenness 
 
 # personal-website

@@ -83,37 +83,28 @@ const projects = [
     id: "0",
     title: "TO DO Web Application",
     description: "TO DO web application using React as Frontend, Django as API and MangoDB as Database.",
-    imagePath: "./images/income-project.png",
+    imagePath: "./images/projects/income-project.png",
     github: "https://github.com/AEsir777/time_expense_management",
     demoLink: "/projects/0",
     tech: ['React', 'Django', 'MangoDB']
   },
   {
     id: "1",
-    title: "Machine Learning",
-    description: "Some Machine Learning Projects using Tensorflow on forecasting and image recognition.",
-    imagePath: "./images/ML-project-img.jpg",
-    github: "https://github.com/AEsir777/some-data-analysis-project",
-    demoLink: "/projects/1",
+    title: "Protein Prediction Model",
+    description: "Preprocessed the labeled dataset that contains features and labels for if the data belongs to a known binding site or not and then conducted supervised classification using Random Forest.",
+    imagePath: "./images/projects/protein-prediction-model.png",
+    github: "https://github.com/AEsir777/CxC_project",
+    demoLink: "https://huggingface.co/spaces/AEsir777/CxC_project",
     tech: ['TensorFlow', 'Sklearn']
   },
   {
     id: "2",
     title: "CC3K",
-    description: "A CC3K game built with C++.",
-    imagePath: "./images/cc3k-project-img.png",
+    description: "A CC3K game built with C++ and used MVC design pattern to control the view - X11, the model - game, controller - key board inputs.",
+    imagePath: "./images/projects/cc3k-project-img.png",
     github: "https://github.com/AEsir777/cc3k",
     demoLink: "/projects/2",
     tech: ['C++', 'MVC']
-  },
-  {
-    id: "3",
-    title: "Protein data analysis",
-    description: "Preprocess the imblanced dataset and train random forest model for prediction. Model is hosted on hugging face.",
-    imagePath: "",
-    github: "https://github.com/AEsir777/CxC_project",
-    demoLink: "https://huggingface.co/spaces/AEsir777/CxC_project",
-    tech: ['Python', 'Sklearn']
   },
 ];
 
