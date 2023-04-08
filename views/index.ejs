@@ -16,52 +16,24 @@
 
   <hr>
 
+
   <!-- skills section -->
   <div class="container-fluid" id="skills-section">
     <div class="skills-content-container row text-center">
-      <div class="frontend-skills align-self-baseline container col col-lg-3 col-md-6 col-sm-6">
-        <h2 class="skills-title"> Frontend Skills </h2>
-        <% frontendSkills.forEach(function(skill) {%>
-        <!-- <div class="skill-container"> -->
-          <img src="<%= skill.href %>" class="skills-images" alt=<%= skill %>>
-          <p> <%= skill.text %> </p>
-        <!-- </div> -->
+      <% skills.forEach(function(skillGroup) {%>
+      <div class="skill-group align-self-baseline container col col-lg-3 col-md-6 col-sm-6">
+        <h2 class="skills-title"> <%= skillGroup.skillName %> </h2>
+        <% skillGroup.skillContent.forEach(function(skill) {%>
+        <img src="<%= skill.href %>" class="skills-images" alt=<%= skill %>>
+        <p> <%= skill.text %> </p>
         <% }); %>
       </div>
-    
-      <div class="backend-skills align-self-baseline container col col-lg-3 col-md-6 col-sm-6">
-        <h2 class="skills-title"> Backtend Skills </h2>
-        <% backendSkills.forEach(function(skill) {%>
-        <!-- <div class="skill-container"> -->
-            <img src="<%= skill.href %>" class="skills-images" alt=<%= skill %>>
-            <p> <%= skill.text %> </p>
-        <!-- </div> -->
-        <% }); %>
-      </div>
-    
-      <div class="machine-learning-skills align-self-baseline container col col-lg-3 col-md-6 col-sm-6">
-        <h2 class="skills-title"> Machine Learning Skills </h2>
-        <% MLSkills.forEach(function(skill) {%>
-        <!-- <div class="skill-container"> -->
-            <img src="<%= skill.href %>" class="skills-images" alt=<%= skill %>>
-            <p> <%= skill.text %> </p>
-        <!-- </div> -->
-        <% }); %>
-      </div>
-    
-      <div class="other-skills align-self-baseline container col col-lg-3 col-md-6 col-sm-6">
-        <h2 class="skills-title"> Other Skills </h2>
-        <% otherSkills.forEach(function(skill) {%>
-        <!-- <div class="skill-container"> -->
-            <img src="<%= skill.href %>" class="skills-images" alt=<%= skill %>>
-            <p> <%= skill.text %> </p>
-        <!-- </div> -->
-        <% }); %>
-      </div>
+      <% }); %>
     </div>
   </div>
 
   <hr>
+
 
   <!-- projects section  -->
   <div class="container-fluid" id="projects-section">
@@ -83,12 +55,20 @@
             <div class="carousel-item project-item container-fluid">
               <img src="<%= project.imagePath %>" class="carousel-img d-block w-100">
               <h5> <%= project.title %> </h5>
-              <p> <%= project.description %> </p>
-              <span class="tech-used"> <%= project.tech %> </span> <br>
-              <div class="d-flex justify-content-around">
-                <a class="project-btn btn btn-outline-light" href="<%= project.github %>" target="_blank"> Github </a>   
-                <a class="project-btn btn btn-outline-light" href="<%= project.demoLink %>" target="_blank"> Site </a> 
-              </div>         
+              <p class="project-description"> <%= project.description %> </p>
+              
+              <!-- bottom part: tech used + code + external link --> 
+              <div class="row">
+                <div class="col col-3 d-flex justify-content-center">
+                  <% project.views.forEach(function(view) {%>
+                  <a class="project-btn" aria-label="<%= view.viewName %>" href="<%= view.href %>" target="_blank"> 
+                    <img class="view-image" src="<%= view.iconPath %>">
+                  </a>
+                  <% }); %>     
+                </div>
+
+                <div class="col"> <span class="tech-used"> <%= project.tech %> </span>  </div>  
+              </div>            
             </div>
           <% }); %>  
         </div>
@@ -104,7 +84,7 @@
           <% }); %>   
         </ul>
       </div>
-  
+
     </div>
   </div>
 </body>

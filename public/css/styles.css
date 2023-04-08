@@ -1,7 +1,14 @@
 /* fix screen smaller than sm */
 @media (max-width: 576px) {
     .col-sm-6 {
-    width: 50% !important;
+        width: 50% !important;
+        flex: 0 0 auto !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-sm-12 {
+        width: 100% !important;
         flex: 0 0 auto !important;
     }
 }
@@ -112,7 +119,7 @@ h5 {
 }
 
 .carousel-indicators {
-    margin-bottom: 4% !important;
+    margin-bottom: 1rem !important;
 } 
 
 /* carousel slides */
@@ -134,20 +141,42 @@ h5 {
     height: 20%;
 }
 
-.project-item p {
+.project-description {
     margin-bottom: 0.5rem;
+    height: 4rem;
+    overflow-y: scroll;
+}
+
+.project-description::-webkit-scrollbar { 
+    display: none;  
+}
+
+.project-btn {
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    border: solid transparent;
+    border-width: 1px;
+    border-radius: 0.5rem;
+    padding: 4%;
+    margin: 0% 5% 2rem!important;
+    z-index: 4 !important;
+    width: 3rem;
+    display: inline-block;
+    filter: invert(0.1);
+}
+
+.project-btn:hover {
+    filter: invert(0);
+    border-color: #dcf5f1;
 }
 
 .tech-used {
     font-size: 1rem !important;
     float: right;
     color: rgba(256, 256, 256, 0.6);
-    display: block;
-}
-
-.project-btn {
-    margin: 4% 5% 2%!important;
-    z-index: 4 !important;
+    display: inline;
+    min-width: fit-content;
+    margin-top: 1rem;
 }
 
 /* Project title */
@@ -202,11 +231,22 @@ h5 {
 }
 
 /* Footer */
-.contact {
-    padding: 0.2rem 0.4rem !important;
+.contact-btn{
+    border: solid transparent;
+    border-width: 1px;
+    border-radius: 1rem;
+    width: 3.6rem;
+    padding: 1%;
+    margin: 0% 2%;
+    display: inline-block;
 }
 
-.contact-img {
-    width: 1.8rem;
-    height: 1.8rem;
+.contact-btn:hover {
+    border-color: #eafaf7;
+    background-color: rgba(0, 0, 0, 0.322);
+}
+
+.credit {
+    text-decoration: none;
+    color:rgb(166, 168, 167)
 }

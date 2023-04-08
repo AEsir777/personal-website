@@ -1,11 +1,12 @@
-﻿- [ X ] fix skills section skill img size
+﻿- [X] fix skills section skill img size
 - [ ] fix skills section color
 - [ ] fix skills section grid
-- [ X ] update my project
+- [X] update my project
 - [ ] migrate the project to MongoDB
-- [ X ] test the sroll function for project title
+- [X] test the sroll function for project title
 - [ ] fix the scroll function for the project title
-- [ X ] fix the large screen project title unresponsivenness 
+- [X] fix the large screen project title unresponsivenness 
+- [ ] refactor the code
 
 # personal-website
 ![image](https://user-images.githubusercontent.com/77596290/218291022-6413cd38-0f1f-4373-b285-f183cd1ebf62.png)
