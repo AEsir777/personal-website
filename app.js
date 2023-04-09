@@ -16,6 +16,8 @@ const uri =
   "mongodb+srv://kebing:" + process.env.pwd + "@cluster0.krgy2sw.mongodb.net/" +
   database + "?retryWrites=true&w=majority";
 
+console.log(uri);
+
 mongoose.connect(uri);
 console.log("Connected to database pertfolio.");
 
