@@ -59,7 +59,7 @@
               
               <!-- bottom part: tech used + code + external link --> 
               <div class="row">
-                <div class="col col-3 d-flex justify-content-center">
+                <div class="col col-4 d-flex justify-content-center">
                   <% project.views.forEach(function(view) {%>
                   <a class="project-btn" aria-label="<%= view.viewName %>" href="<%= view.href %>" target="_blank"> 
                     <img class="view-image" src="<%= view.iconPath %>">
@@ -67,7 +67,7 @@
                   <% }); %>     
                 </div>
 
-                <div class="col"> <span class="tech-used"> <%= project.tech %> </span>  </div>  
+                <div class="col"> <span class="tech-used"> <%= project.tech.join(', ') %> </span>  </div>  
               </div>            
             </div>
           <% }); %>  

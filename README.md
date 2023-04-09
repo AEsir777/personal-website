@@ -2,7 +2,7 @@
 - [ ] fix skills section color
 - [ ] fix skills section grid
 - [X] update my project
-- [ ] migrate the project to MongoDB
+- [X] migrate the project to MongoDB
 - [X] test the sroll function for project title
 - [ ] fix the scroll function for the project title
 - [X] fix the large screen project title unresponsivenness 
