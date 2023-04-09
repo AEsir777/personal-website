@@ -39,6 +39,8 @@ async function run() {
 }
 
 await run();
+console.log(skills);
+console.log(projects);
 
 app.get("/", (req, res) => {
   const parameters = {

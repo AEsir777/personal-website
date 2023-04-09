@@ -154,7 +154,7 @@ const toDoList = new Project({
     {
       viewName: "GitHub",
       href: "https://github.com/AEsir777/time_expense_management",
-      iconPath: "images/GitHub.svg",
+      iconPath: "images/git-hub.svg",
     },
   ],
   tech: ["React", "Django", "MangoDB"],
@@ -170,7 +170,7 @@ const proteinPredictionModel = new Project({
     {
       viewName: "GitHub",
       href: "https://github.com/AEsir777/CxC_project",
-      iconPath: "images/GitHub.svg",
+      iconPath: "images/git-hub.svg",
     },
     {
       viewName: "External Link",
@@ -191,7 +191,7 @@ const CC3K = new Project({
     {
       viewName: "GitHub",
       href: "https://github.com/AEsir777/cc3k",
-      iconPath: "images/GitHub.svg",
+      iconPath: "images/git-hub.svg",
     },
   ],
   demoLink: "/projects/2",
@@ -208,7 +208,7 @@ const pertfolio = new Project({
     {
       viewName: "GitHub",
       href: "https://github.com/AEsir777/personal-website",
-      iconPath: "images/GitHub.svg",
+      iconPath: "images/git-hub.svg",
     },
   ],
   tech: ["Node.js", "MongoDB", "Bootstrap", "JQuery", "npm"],

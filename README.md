@@ -32,5 +32,6 @@ All the information is stored in MongoDB and integrated into code using Mongoose
 - [ ] refactor the code
 - [X] host the website
 - [ ] fix the hosting
+- [ ] set up storage place in AWS 
 
 
