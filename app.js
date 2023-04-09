@@ -34,7 +34,9 @@ app.get("/", async (req, res) => {
   res.render("index", parameters);
 });
 
-app.get("/projects/:projectId", (req, res) => {
+app.get("/projects/:projectId",  async(req, res) => {
+  const projects = await db.collection("projects").find({}).toArray();
+
   let found = false;
   const id = req.params.projectId;
   projects.forEach((project) => {
@@ -49,15 +51,24 @@ app.get("/projects/:projectId", (req, res) => {
   }
 });
 
-// Connect the client to the server
+app.listen(process.env.PORT || 3000, async function () {
+  await client.connect();
+  console.log("Server is running.");
+});
+
+
+/* // Connect the client to the server
 client.connect((err) => {
   if (err) { 
     console.error(err); 
     return false; 
   }
   
+  console.log("Connected to MongoDB.")
   // connection to mongo is successful, listen for requests
-  app.listen(process.env.PORT || 3000, function () {
+  app.listen(process.env.PORT || 3000, async function () {
+    await client.connect();
     console.log("Server is running.");
   });
-});
+}); */
+
