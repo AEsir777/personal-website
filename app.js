@@ -12,9 +12,7 @@ app.use(express.static("public"));
 // data base for my personal website
 const database = "pertfolio";
 // connection string
-const uri =
-  "mongodb+srv://kebing:" + process.env.pwd + "@cluster0.krgy2sw.mongodb.net/" +
-  "?retryWrites=true&w=majority";
+const uri = process.env.connectionString;
 
 const client = new MongoClient(uri);
 
@@ -35,7 +33,7 @@ app.get("/", async (req, res) => {
 });
 
 app.get("/projects/:projectId",  async(req, res) => {
-  const projects = await db.collection("projects").find({}).toArray();
+  const projects = await client.db(database).collection("projects").find({}).toArray();
 
   let found = false;
   const id = req.params.projectId;
@@ -51,24 +49,13 @@ app.get("/projects/:projectId",  async(req, res) => {
   }
 });
 
-app.listen(process.env.PORT || 3000, async function () {
-  await client.connect();
-  console.log("Server is running.");
-});
-
-
-/* // Connect the client to the server
-client.connect((err) => {
-  if (err) { 
-    console.error(err); 
-    return false; 
-  }
-  
-  console.log("Connected to MongoDB.")
-  // connection to mongo is successful, listen for requests
-  app.listen(process.env.PORT || 3000, async function () {
-    await client.connect();
+client.connect().then(() => {
+  console.log("MongoDB connected.");
+  app.listen(process.env.PORT || 3000, function () {
     console.log("Server is running.");
   });
-}); */
+}).catch((err) => {
+  console.error(err);
+});
+
 
