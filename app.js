@@ -17,32 +17,16 @@ const uri =
   "?retryWrites=true&w=majority";
 
 const client = new MongoClient(uri);
-console.log(uri);
 
-var skills;
-var projects;
+app.get("/", async (req, res) => {
+  // get the DB
+  const db = client.db(database);
+  
+  // read from skills
+  const skills = await db.collection("skills").find({}).toArray();
+  // read from projects
+  const projects = await db.collection("projects").find({}).toArray();
 
-async function run() {
-  try {
-    // Connect the client to the server
-    await client.connect();
-    // Send a ping to confirm a successful connection
-    const db = client.db(database);
-
-    // read from skills
-    skills = await db.collection("skills").find({}).toArray();
-    projects = await db.collection("projects").find({}).toArray();
-  } finally {
-    // Ensures that the client will close when you finish/error
-    await client.close();
-  }
-}
-
-await run();
-console.log(skills);
-console.log(projects);
-
-app.get("/", (req, res) => {
   const parameters = {
     skills: skills,
     projects: projects,
@@ -65,6 +49,15 @@ app.get("/projects/:projectId", (req, res) => {
   }
 });
 
-app.listen(process.env.PORT || 3000, function () {
-  console.log("Server is running.");
+// Connect the client to the server
+client.connect((err) => {
+  if (err) { 
+    console.error(err); 
+    return false; 
+  }
+  
+  // connection to mongo is successful, listen for requests
+  app.listen(process.env.PORT || 3000, function () {
+    console.log("Server is running.");
+  });
 });
