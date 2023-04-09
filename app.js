@@ -17,6 +17,7 @@ const uri =
   "?retryWrites=true&w=majority";
 
 const client = new MongoClient(uri);
+console.log(uri);
 
 var skills;
 var projects;
