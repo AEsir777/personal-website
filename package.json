@@ -2,7 +2,7 @@
   "name": "personal-website",
   "version": "1.0.0",
   "description": "![image](https://user-images.githubusercontent.com/77596290/218291022-6413cd38-0f1f-4373-b285-f183cd1ebf62.png)\r ![image](https://user-images.githubusercontent.com/77596290/218291026-2ef2fac6-aabb-45df-9ad7-749fb32a5f68.png)",
-  "main": "app.js",
+  "main": "mongoose.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
