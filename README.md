@@ -1,6 +1,7 @@
 # personal-website
 
 ## Hosting
+Hosted using cyclic free tier - slow loading speed
 <img align="left" height="40px" src = https://www.iconpacks.net/icons/1/free-click-icon-1263-thumb.png> 
 
 [Try it out here](https://kebing-liu-personal-website.cyclic.app/)
@@ -29,6 +30,7 @@ All the information is stored in MongoDB and integrated into code using Mongoose
 - [ ] fix the scroll function for the project title
 - [X] fix the large screen project title unresponsivenness 
 - [ ] refactor the code
-- [ ] host the website
+- [X] host the website
+- [ ] fix the hosting
 
 
