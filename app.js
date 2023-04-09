@@ -16,7 +16,12 @@ const uri =
   "mongodb+srv://kebing:" + process.env.pwd + "@cluster0.krgy2sw.mongodb.net/" +
   database + "?retryWrites=true&w=majority";
 
-mongoose.connect(uri);
+try {
+  await mongoose.connect(uri);
+} catch (err) {
+  console.log(err);
+};
+
 console.log("Connected to database pertfolio.");
 
 // skills section
@@ -68,8 +73,14 @@ const projectSchema = new mongoose.Schema(
 const Project = mongoose.model("Project", projectSchema);
 
 // find the items
-const skills = await Skill.find({});
-const projects = await Project.find({});
+const skills = await Skill.find({}).catch((err) => {
+  console.log(err);
+});
+const projects = await Project.find({}).catch((err) => {
+  console.log(err);
+})
+mongoose.connection.close();
+
 
 app.get("/", (req, res) => {
   const parameters = {
