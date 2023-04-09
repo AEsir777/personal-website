@@ -98,7 +98,7 @@ const projects = [
       {
         viewName: "GitHub",
         href: "https://github.com/AEsir777/time_expense_management",
-        iconPath: "images/GitHub.png",
+        iconPath: "images/git-hub.svg",
       },
     ],
     tech: ["React", "Django", "MangoDB"],
@@ -113,7 +113,7 @@ const projects = [
       {
         viewName: "GitHub",
         href: "https://github.com/AEsir777/CxC_project",
-        iconPath: "images/GitHub.png",
+        iconPath: "images/git-hub.svg",
       },
       {
         viewName: "External Link",
@@ -133,7 +133,7 @@ const projects = [
       {
         viewName: "GitHub",
         href: "https://github.com/AEsir777/cc3k",
-        iconPath: "images/GitHub.png",
+        iconPath: "images/git-hub.svg",
       },
     ],
     demoLink: "/projects/2",
@@ -149,7 +149,7 @@ const projects = [
       {
         viewName: "GitHub",
         href: "https://github.com/AEsir777/personal-website",
-        iconPath: "images/GitHub.png",
+        iconPath: "images/git-hub.svg",
       },
     ],
     tech: ["Node.js", "MongoDB", "Bootstrap", "JQuery", "npm"],

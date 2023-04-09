@@ -167,6 +167,7 @@ h5 {
     border-radius: 1rem;
     padding: 0.4rem;
     margin: 0% 5% 2rem!important;
+    width: 3rem;
     z-index: 4 !important;
     display: inline-block;
     filter: invert(0.1);
@@ -175,10 +176,6 @@ h5 {
 .project-btn:hover {
     filter: invert(0);
     border-color: #dcf5f1;
-}
-
-.view-image {
-    width: 2rem;
 }
 
 .tech-used {
