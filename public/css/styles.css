@@ -168,7 +168,6 @@ h5 {
     padding: 0.4rem;
     margin: 0% 5% 2rem!important;
     z-index: 4 !important;
-    width: 3rem;
     display: inline-block;
     filter: invert(0.1);
 }
@@ -176,6 +175,10 @@ h5 {
 .project-btn:hover {
     filter: invert(0);
     border-color: #dcf5f1;
+}
+
+.view-image {
+    width: 2rem;
 }
 
 .tech-used {
@@ -252,6 +255,10 @@ h5 {
 .contact-btn:hover {
     border-color: #dcf5f1;
     background-color: rgba(0, 0, 0, 0.322);
+}
+
+.contact-img{
+    width: 2rem;
 }
 
 .credit {

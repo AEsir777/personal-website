@@ -98,7 +98,7 @@ const projects = [
       {
         viewName: "GitHub",
         href: "https://github.com/AEsir777/time_expense_management",
-        iconPath: "images/GitHub.svg",
+        iconPath: "images/GitHub.png",
       },
     ],
     tech: ["React", "Django", "MangoDB"],
@@ -113,7 +113,7 @@ const projects = [
       {
         viewName: "GitHub",
         href: "https://github.com/AEsir777/CxC_project",
-        iconPath: "images/GitHub.svg",
+        iconPath: "images/GitHub.png",
       },
       {
         viewName: "External Link",
@@ -133,7 +133,7 @@ const projects = [
       {
         viewName: "GitHub",
         href: "https://github.com/AEsir777/cc3k",
-        iconPath: "images/GitHub.svg",
+        iconPath: "images/GitHub.png",
       },
     ],
     demoLink: "/projects/2",
@@ -149,7 +149,7 @@ const projects = [
       {
         viewName: "GitHub",
         href: "https://github.com/AEsir777/personal-website",
-        iconPath: "images/GitHub.svg",
+        iconPath: "images/GitHub.png",
       },
     ],
     tech: ["Node.js", "MongoDB", "Bootstrap", "JQuery", "npm"],
@@ -180,5 +180,5 @@ app.get("/projects/:projectId", (req, res) => {
 });
 
 app.listen(process.env.PORT || 3000, function () {
-  console.log("Server is running on port 3000.");
+  console.log("Server is running on port.");
 });
