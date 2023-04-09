@@ -1,4 +1,10 @@
 # personal-website
+
+## Hosting
+<img align="left" height="40px" src = https://www.iconpacks.net/icons/1/free-click-icon-1263-thumb.png> 
+
+[Try it out here](https://kebing-liu-personal-website.cyclic.app/)
+
 ## UI
 ![image](https://user-images.githubusercontent.com/77596290/230791657-1bf53b62-09e2-487b-92cb-25b3a613b4fb.png)
 ![image](https://user-images.githubusercontent.com/77596290/230791630-8bf23a5b-f147-4f45-bec7-2941e9c62997.png)
@@ -10,8 +16,6 @@ EJS templates are used to avoid repeatition of code.
 Used NPM to manage packages, Node.JS and Express as the backend framework.
 All the information is stored in MongoDB and integrated into code using Mongoose.
 ![image](https://user-images.githubusercontent.com/77596290/230791793-3847fdd2-15fe-4359-b7b8-3cc53e1c9efd.png)
-
-## Hosting
 
 
 
