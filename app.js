@@ -1,5 +1,5 @@
 import express from "express";
-import mongoose from "mongoose";
+import { MongoClient } from 'mongodb';
 import * as dotenv from "dotenv";
 dotenv.config();
 
@@ -14,73 +14,30 @@ const database = "pertfolio";
 // connection string
 const uri =
   "mongodb+srv://kebing:" + process.env.pwd + "@cluster0.krgy2sw.mongodb.net/" +
-  database + "?retryWrites=true&w=majority";
+  "?retryWrites=true&w=majority";
 
-try {
-  await mongoose.connect(uri);
-} catch (err) {
-  console.log(err);
-};
+const client = new MongoClient(uri);
 
-console.log("Connected to database pertfolio.");
+var skills;
+var projects;
 
-// skills section
-// schema for skill collection
-const skillSchema = new mongoose.Schema({
-  skillName: {
-    type: String,
-    required: true,
-  },
-  skillContent: [
-    {
-      text: String,
-      href: String,
-    },
-  ],
-});
+async function run() {
+  try {
+    // Connect the client to the server
+    await client.connect();
+    // Send a ping to confirm a successful connection
+    const db = client.db(database);
 
-const Skill = mongoose.model("Skill", skillSchema);
+    // read from skills
+    skills = await db.collection("skills").find({}).toArray();
+    projects = await db.collection("projects").find({}).toArray();
+  } finally {
+    // Ensures that the client will close when you finish/error
+    await client.close();
+  }
+}
 
-// project section
-// schema for project collection
-const projectSchema = new mongoose.Schema(
-  {
-    _id: Number,
-    title: {
-      type: String,
-      required: true,
-    },
-    description: {
-      type: String,
-      required: true,
-    },
-    imagePath: {
-      type: String,
-      required: true,
-    },
-    views: [
-      {
-        viewName: String,
-        href: String,
-        iconPath: String,
-      },
-    ],
-    tech: [String],
-  },
-  { _id: false }
-);
-
-const Project = mongoose.model("Project", projectSchema);
-
-// find the items
-const skills = await Skill.find({}).catch((err) => {
-  console.log(err);
-});
-const projects = await Project.find({}).catch((err) => {
-  console.log(err);
-})
-mongoose.connection.close();
-
+await run();
 
 app.get("/", (req, res) => {
   const parameters = {
