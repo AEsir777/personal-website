@@ -29,9 +29,9 @@ All the information is stored in MongoDB and integrated into code using Mongoose
 - [X] test the sroll function for project title
 - [ ] fix the scroll function for the project title
 - [X] fix the large screen project title unresponsivenness 
-- [ ] refactor the code
+- [X] refactor the code
 - [X] host the website
-- [ ] fix the hosting
+- [X] fix the hosting
 - [ ] set up storage place in AWS 
 
 
