@@ -1,5 +1,7 @@
 # personal-website
+My website is inspired by the art https://in.pinterest.com/pin/406449935110782805/ by DailyMinimal.
 
+# Old-version (ignore below)
 ## Hosting
 Hosted using cyclic free tier - slow loading speed
 <img align="left" height="40px" src = https://www.iconpacks.net/icons/1/free-click-icon-1263-thumb.png> 
