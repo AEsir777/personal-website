@@ -18,3 +18,40 @@ body {
   color: var(--white);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.sect{
+  position:absolute;                /* overlay the whole diamond */
+  inset:0;
+  display:flex; align-items:center; justify-content:center;
+  font:600 1.1rem/1.2 "Inter", sans-serif;
+  text-transform:uppercase;
+  color:#fff;
+  pointer-events:auto;              /* make the whole wedge clickable */
+  transition:background .25s, filter .3s;
+  mix-blend-mode:difference;        /* stays readable on red & black */
+}
+
+/* ——— clip each label to its wedge ——— */
+/* angles are based on your two cuts: 10° and 70° */
+.music{
+  clip-path:polygon(
+      0 0, 100% 0,
+      100% 15%, 50% 50%, 0 26.7%);
+}
+.graphics{
+  clip-path:polygon(
+      100% 15%, 100% 73.3%, 50% 50%);
+}
+.photography{
+  clip-path:polygon(
+      0 26.7%, 50% 50%, 0 85%);
+}
+.projects{
+  clip-path:polygon(
+      50% 50%, 100% 73.3%, 100% 100%, 0 100%, 0 85%);
+}
+
+/* nice hover hint */
+.sect:hover{
+  filter:drop-shadow(0 0 6px #fff6);
+}

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -29,35 +30,36 @@ export default function RootLayout({
       <body className={inter.className + ' relative min-h-screen flex items-center justify-center'}>
         {/* Diamond frame */}
         <div className="relative w-[50vmin] aspect-square rotate-45 border-8 border-white">
-
-        {/* separator lines */}
-        <div className="absolute inset-0 pointer-events-none">
-              <span className="absolute left-1/2 top-1/2 w-[200%] h-[2px] bg-white -translate-x-1/2 -translate-y-1/2 rotate-[25deg]" />
-              <span className="absolute left-1/2 top-1/2 w-[200%] h-[2px] bg-white -translate-x-1/2 -translate-y-1/2 rotate-[-35deg]" />
-            </div>
+          {/* separator lines */}
+          <div className="absolute inset-0 pointer-events-none">
+            {/* initial - a line at top of the cube starting at left top point */}
+            {/*left-1/2, top-1/2: absolute translate right/down 1/2 of the whole div*/}
+            {/*-translate-x-1/2: translate to x axis left 1/2 of the whole length? */}
+            {/*-translate-y-1/2: translate to y axis down 1/2 of the whole height? */}
+            {/*rotate-[25deg]: rotate clockwise 25 deg*/}
+            <span className="absolute -left-1/2 top-1/2 w-[200%] h-[2px] bg-white *-translate-x-1/4-not-used -translate-y-1/2 rotate-[25deg]" />
+            <span className="absolute -left-1/2 top-1/2 w-[200%] h-[2px] bg-white *-translate-x-1/2-not-used -translate-y-1/2 rotate-[-35deg]" />
+          </div>
 
           <div
-        className="absolute inset-0 -z-10"
-        style={{
-          /* first cut at 10°, second cut at 70°  →  black | red  */
-          background:
-            'conic-gradient(from -65deg at 50% 50%,' +
-            ' #000 0 120deg,' +      // black up to the 2nd cut
-            ' #dc2626 120deg 180deg,' + // red afterwards   (Tailwind red-600)
-            ' #000 180deg 300deg, ' +
-            ' #dc2626 300deg 360deg)'
-        }}
-      />
-          <div className="-rotate-45 flex items-center justify-center w-full h-full">
-            
-
-            
-            {children}
+            className="absolute inset-0 -z-10"
+            style={{
+              background:
+                'conic-gradient(from -65deg at 50% 50%,' +
+                ' #000 0 120deg,' +
+                ' #dc2626 120deg 180deg,' +
+                ' #000 180deg 300deg, ' +
+                ' #dc2626 300deg 360deg)'
+            }}
+          />
+          <div className="flex items-center justify-center w-full h-full">
+            <Link href="/music" className="sect music">Music</Link>
+            <Link href="/graphics" className="sect graphics">Graphics</Link>
+            <Link href="/photography" className="sect photography">Photography</Link>
+            <Link href="/projects" className="sect projects">Projects</Link>
+            <Link href="/projects" className="sect projects">About Me</Link>
           </div>
         </div>
-        
-
-        {/* theme switch  light bulb */}
       </body>
     </html>
   );
