@@ -20,6 +20,9 @@ export const metadata: Metadata = {
 
 const inter = Inter({ subsets: ['latin'] });
 
+const line1_angle = -40;
+const line2_angle = 25;
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -32,24 +35,26 @@ export default function RootLayout({
         <div className="relative w-[50vmin] aspect-square rotate-45 border-8 border-white">
           {/* separator lines */}
           <div className="absolute inset-0 pointer-events-none">
-            {/* initial - a line at top of the cube starting at left top point */}
+            {/* initial - a horizontal line at top of the cube starting at left top point */}
             {/*left-1/2, top-1/2: absolute translate right/down 1/2 of the whole div*/}
             {/*-translate-x-1/2: translate to x axis left 1/2 of the whole length? */}
             {/*-translate-y-1/2: translate to y axis down 1/2 of the whole height? */}
             {/*rotate-[25deg]: rotate clockwise 25 deg*/}
-            <span className="absolute -left-1/2 top-1/2 w-[200%] h-[2px] bg-white *-translate-x-1/4-not-used -translate-y-1/2 rotate-[25deg]" />
-            <span className="absolute -left-1/2 top-1/2 w-[200%] h-[2px] bg-white *-translate-x-1/2-not-used -translate-y-1/2 rotate-[-35deg]" />
+            <span className={`absolute -left-1/2 top-1/2 w-[200%] h-[2px] bg-white *-translate-x-1/4-not-used -translate-y-1/2 rotate-[${line2_angle}deg]`} />
+            <span className={`absolute -left-1/2 top-1/2 w-[200%] h-[2px] bg-white *-translate-x-1/2-not-used -translate-y-1/2 rotate-[${line1_angle}deg]`} />
           </div>
 
+          {/* conic-gradient(from n-deg The first vertical line clockwise n degree*/}
+          {/* 50%, 50%: center is at 50% from left 50% from to top */}
           <div
             className="absolute inset-0 -z-10"
             style={{
               background:
-                'conic-gradient(from -65deg at 50% 50%,' +
-                ' #000 0 120deg,' +
-                ' #dc2626 120deg 180deg,' +
-                ' #000 180deg 300deg, ' +
-                ' #dc2626 300deg 360deg)'
+                `conic-gradient(from ${line1_angle-90}deg at 50% 50%,` +
+                ` #dc2626 0 ${line2_angle - line1_angle}deg,` +
+                ` #000 ${line2_angle - line1_angle}deg 180deg,` +
+                ` #dc2626 180deg ${180 + line2_angle - line1_angle}deg, ` +
+                ` #000 ${180 + line2_angle - line1_angle}deg 360deg)`
             }}
           />
           <div className="flex items-center justify-center w-full h-full">
